@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Grandstander", cursive;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  margin: 0 10%;
+  background-image: url("bg1.jpeg");
+  background-size: contain;
+}
+
+.logo1 {
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+}
+
+.logo1:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.site-header {
+  display: flex;
+  padding: 1rem 1rem;
+  background: #dfd3c3;
+  border-radius: 20px;
+  opacity: 70%;
+  border: 1px solid;
+  margin: 1rem;
+  text-align: center;
+  font-size: 300;
+}
+
+.spirited-away {
+  padding-top: 5%;
+  padding-bottom: 3%;
+  background-color: #dfd3c3;
+  text-align: center;
+}
+
+.animate__animated.animate__tada {
+  --animate-duration: 2s;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: transparent;
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar img {
+  object-fit: cover;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.box {
+  width: 40%;
+  /* padding: 2rem; */
+  background-color: #dfd3c3;
+  /* border: 0.0625rem solid; */
+  text-align: center;
+  justify-content: center;
+}
+/* img in smaller screen */
+.totoro img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.howls img {
+  object-fit: cover;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.Princess-Mononoke img {
+  object-fit: cover;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.your-name img {
+  object-fit: cover;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* Text in smaller screen */
+.text {
+  padding-top: 5%;
+}
+.site-footer {
+  padding: 2rem 2rem;
+  background-color: yellow;
+  margin: 1rem;
+}
+
+img {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+  .site-container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 40%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-container {
+    width: 50%;
+  }
+  /* need to change */
+  .logo1 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .logo1:hover {
+    transform: rotate(360deg) scale(1.5);
+  }
+
+  .site-header {
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: #dfd3c3;
+    border-radius: 20px;
+    opacity: 70%;
+    border: 1px solid;
+    /* transition: all 0.4s ease; */
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.1875rem;
+    font-size: larger;
+  }
+
+  .sidebar img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  /* img bigger screen */
+  .howls img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .Princess-Mononoke img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .your-name img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  /* Texts */
+  .text {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #dfd3c3;
+    word-wrap: break-word;
+    /* margin: 0, 10%; */
+  }
+  .spirited-away {
+    width: 100%;
+    position: relative;
+    top: -10%;
+  }
+}

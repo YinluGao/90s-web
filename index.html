@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <!-- body -->
+  <body>
+    <header>
+      <img class="logo1" src="logo1.png" alt="" />
+      <ul class="navlist" id="myNavlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Museum</a></li>
+        <li><a href="p1.html">Collections</a></li>
+        <li><a href="#">Exhibitions</a></li>
+        <li><a href="#">Q&A</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#"><i class="bx bx-search-alt-2"></i></a>
+        <a href="#"><i class="bx bxs-heart"></i></a>
+        <a href="#"><i class="bx bx-chat"></i></a>
+        <div><i class="bx bx-menu" id="menu-icon"></i></div>
+      </div>
+    </header>
+    <!-- main content -->
+    <section class="main-header">
+      <div class="main-text">
+        <h5>Welcome to</h5>
+        <h1>The<br /><span class="input"></span></h1>
+        <p>
+          Look! Totoro Is Waiting for Us at the Entrance!
+          <br />
+          Go and explore your favourite Ghibli film!
+        </p>
+        <div class="main-btn"></div>
+        <a href="#" class="btn">Tickets</a>
+        <a href="#" class="btn btn2">Current films</a>
+      </div>
+    </section>
+
+    <div class="left">
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+      <a href="#"><i class="bx bxl-instagram"></i></a>
+      <a href="#"><i class="bx bxl-facebook"></i></a>
+    </div>
+
+    <div class="right">
+      <a href="#" class="scroll"
+        >Sign up for updates and stay in the loop!<i
+          class="bx bx-chevrons-down"
+        ></i
+      ></a>
+    </div>
+
+    <div class="mouse-move" id="cursor"></div>
+    <!--- custom js link --->
+    <script src="script.js"></script>
+    <!-- link for js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".input", {
+        strings: ["Ghibli Museum.", "Fantasy World.", "Wonder Space."],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
