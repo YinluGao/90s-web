@@ -25,6 +25,11 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="site-header animate__animated animate__tada">
@@ -40,6 +45,11 @@
             Released on 2001. <br />
             IMDB rating 8.6/10
           </p>
+          <br />
+          <div>
+            <span>like: <a id="clicks">0</a></span>
+            <i class="bx bxs-like" type="button" onclick="hello()"></i>
+          </div>
         </div>
       </div>
 
@@ -52,6 +62,11 @@
               Released on 1988. <br />
               IMDB rating 8.1/10
             </p>
+            <br />
+            <div>
+              <span>like: <a id="clicks1">0</a></span>
+              <i class="bx bxs-like" type="button" onclick="hello1()"></i>
+            </div>
           </div>
         </div>
         <div class="box howls">
@@ -62,6 +77,11 @@
               Released on 2004. <br />
               IMDB rating 8.2/10
             </p>
+            <br />
+            <div>
+              <span>like: <a id="clicks2">0</a></span>
+              <i class="bx bxs-like" type="button" onclick="hello2()"></i>
+            </div>
           </div>
         </div>
         <div class="box Princess-Mononoke">
@@ -72,6 +92,11 @@
               Released on 1997. <br />
               IMDB rating 8.4/10
             </p>
+            <br />
+            <div>
+              <span>like: <a id="clicks3">0</a></span>
+              <i class="bx bxs-like" type="button" onclick="hello3()"></i>
+            </div>
           </div>
         </div>
         <div class="box your-name">
@@ -82,6 +107,11 @@
               Released on 2016. <br />
               IMDB rating 8.4/10
             </p>
+            <br />
+            <div>
+              <span>like: <a id="clicks4">0</a></span>
+              <i class="bx bxs-like" type="button" onclick="hello4()"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -103,10 +133,10 @@
     <div class="footer--visit footer--element">
       <p>Visit</p>
       <ul>
-        <li>Attention</li>
-        <li>Tickets</li>
-        <li>Hours and Directions</li>
-        <li>Accessibility</li>
+        <a href="#clicks2"><li>Attention</li></a>
+        <a href="#"><li>Tickets</li></a>
+        <a href="#"><li>Hours and Directions</li></a>
+        <a href="#"><li>Accessibility</li></a>
       </ul>
     </div>
     <div class="footer--whatson footer--element">
