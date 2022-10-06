@@ -40,6 +40,10 @@ body {
   font-size: 300;
 }
 
+header p {
+  color: black;
+}
+
 .spirited-away {
   padding-top: 5%;
   padding-bottom: 3%;
@@ -78,7 +82,6 @@ body {
 
 /* hover Zoom in */
 .sidebar img:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -211,20 +214,6 @@ img {
   }
 }
 
-/* tablet screen 
-@media screen and (min-width: 481px) and (max-width: 969px) {
-  .site-container {
-    display: display;
-    flex-direction: row;
-  }
-  .sidebar {
-    width: 30%;
-  }
-  .box-container {
-    flex-wrap: nowrap;
-  }
-  */
-
 /* laptop screen */
 @media screen and (min-width: 969px) {
   .site-container {
@@ -235,8 +224,8 @@ img {
     width: 40%;
     margin-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items : center; */
   }
 
   .box-container {
