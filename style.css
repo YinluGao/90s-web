@@ -7,12 +7,16 @@
   list-style: none;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,7 +43,6 @@ header {
   font-weight: 500;
   padding: 5px 5px;
   margin: 0 22px;
-  border-bottom: 2px solid transparent;
   transition: all 0.4s ease;
 }
 
@@ -54,7 +57,7 @@ header {
 }
 
 .icons i {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 35px;
@@ -65,7 +68,7 @@ header {
   margin: 0 10px;
   border-radius: 10px;
   border: 1px solid transparent;
-  transition: all 0.4s ease;
+  transition: all 1s ease;
 }
 .icons i:hover {
   border: 1px solid #3e1908;
@@ -76,19 +79,18 @@ header {
 #menu-icon {
   color: #3e1908;
   font-size: 26px;
-  z-index: 10001;
   cursor: pointer;
-  margin-left: 10px;
   display: none;
 }
 
-.main-header {
+.main-content {
+  display: flex;
   width: 100%;
+  height: 100vh;
   background: url("background.jpeg");
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
   align-items: center;
 }
 section {
@@ -96,7 +98,7 @@ section {
 }
 
 .main-text h1 {
-  margin: 15px 0;
+  margin: 30px 0;
   font-size: 5.5rem;
   font-weight: 800;
   color: #3e1908;
@@ -148,13 +150,13 @@ section {
 }
 
 .left {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 40%;
   padding: 0 5%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 .left i {
-  display: block;
+  display: flex;
   margin: 28px 0;
   font-size: 25px;
   color: #3e1908;
@@ -173,7 +175,6 @@ section {
 
 .scroll {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .right a {
@@ -184,7 +185,6 @@ section {
 }
 
 .right i {
-  color: #ca7c62;
   font-size: 25px;
   margin-left: 5px;
 }
@@ -192,18 +192,15 @@ section {
 @media screen and (max-width: 1470px) {
   header {
     padding: 15px 2%;
-    transition: 0.2s;
   }
   section {
     padding: 0 2%;
-    transition: 0.2s;
   }
   .left {
     display: none;
   }
   .right {
     right: 2%;
-    transition: 0.2s;
   }
 }
 
@@ -225,8 +222,7 @@ section {
 }
 @media screen and (max-width: 975px) {
   #menu-icon {
-    display: block;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
@@ -234,7 +230,7 @@ section {
     background-color: #3e1908;
     color: #fff;
     font-size: 1.5625rem;
-    border-radius: 0.625rem;
+    border-radius: 10px;
   }
   /*  */
   .mouse-move {
@@ -248,7 +244,7 @@ section {
   }
   .navlist {
     position: absolute;
-    top: -600px;
+    top: -500px;
     left: 0;
     right: 0;
     display: flex;
@@ -258,7 +254,7 @@ section {
     transition: all 1s ease;
   }
   .navlist a {
-    font-size: 0.9375rem;
+    font-size: 15px;
     display: block;
     padding: 0.5rem;
     margin: 1.1rem;
@@ -271,7 +267,7 @@ section {
     color: #fff;
   }
 }
-
+/* header section top 100% */
 .navlist.open {
   top: 100%;
 }

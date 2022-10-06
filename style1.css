@@ -21,6 +21,7 @@ body {
   height: 40px;
   width: 40px;
   transition: 0.5s;
+  font-size: smaller;
 }
 
 .logo1:hover {
