@@ -90,7 +90,6 @@ header {
   background: url("background.jpeg");
   background-size: cover;
   background-position: center;
-  display: flex;
   align-items: center;
 }
 section {

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Grandstander", cursive;
+  font-family: "Bitter", serif;
   text-decoration: none;
   list-style: none;
 }
@@ -38,21 +38,24 @@ body {
   margin: 1rem;
   text-align: center;
   font-size: 300;
+  overflow: hidden;
+}
+
+.animate__animated.animate__tada {
+  --animate-duration: 2s;
 }
 
 header p {
   color: black;
+  font-size: 1rem;
+  font-weight: 300;
 }
-
+/* for the text inside box */
 .spirited-away {
   padding-top: 5%;
   padding-bottom: 3%;
   background-color: #ffe898;
   text-align: center;
-}
-
-.animate__animated.animate__tada {
-  --animate-duration: 2s;
 }
 
 .site-container {
@@ -190,7 +193,7 @@ header p {
 
 img {
   display: flex;
-  flex-flow: row nowrap;
+  /* flex-flow: row nowrap; */
   align-items: center;
 }
 
@@ -231,7 +234,7 @@ img {
   .box-container {
     width: 50%;
   }
-  /* need to change */
+
   .logo1 {
     width: 2.5rem;
     height: 2.5rem;
